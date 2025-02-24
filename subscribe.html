@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://assets.adobedtm.com/236ca7d75265/73b479984346/launch-329a19912cee-development.min.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Subscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="subscription-container">
+        <h1>Course Subscription</h1>
+        <!-- Video -->
+        <div class="video-container">
+            <h2>Welcome Video</h2>
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/3SyHScC96Ws" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Subscription Form -->
+        <form action="submit_subscription.php" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="file">Attach File:</label>
+            <input type="file" id="file" name="file"><br><br>
+            <button type="submit" id="submitBtn">Submit</button>
+
+
+        </form>
+        
+        <div class="course">
+            <h2>Course 1</h2>
+            <p>Price: ₹5000</p>
+            <button class ="coursebtn" onclick="alert('SUBSCRIBED!')">Subscribe</button>
+        </div>
+        <div class="course">
+            <h2>Course 2</h2>
+            <p>Price: ₹7000</p>
+            <button class ="coursebtn" onclick="alert('SUBSCRIBED!')">Subscribe</button>
+        </div>
+        <div class="course">
+            <h2>Course 3</h2>
+            <p>Price: ₹9000</p>
+            <button class ="coursebtn" onclick="alert('SUBSCRIBED!')">Subscribe</button>
+        </div>
+    </div>
+</body>
+</html>
