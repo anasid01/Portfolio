@@ -3,45 +3,30 @@
 <head>
     <script>
     window.utag_data = {
-  page_name: document.title,
-  GA_tracking_Id: "G-N17VMNCLW0", // Replace with your GA4 Tracking ID
-  GA_page_name: document.title,
-  ga4_event_name: "page_view",
-  measurement_id_ga: "G-N17VMNCLW0", // Replace with your GA4 Measurement ID
-  page_location: window.location.href,
-  page_path: window.location.pathname,
-  page_referrer: document.referrer,
-  page_domain: window.location.hostname,
-  tealium_event: "page_view"
-};</script>
+      page_name: document.title,
+      GA_tracking_Id: "G-N17VMNCLW0", // GA4 Tracking ID
+      GA_page_name: document.title,
+      ga4_event_name: "page_view",
+      measurement_id_ga: "G-N17VMNCLW0", // GA4 Measurement ID
+      page_location: window.location.href,
+      page_path: window.location.pathname,
+      page_referrer: document.referrer,
+      page_domain: window.location.hostname,
+      tealium_event: "page_view"
+    };
+    </script>
 
-    <!-- The utag.sync.js script should run as early as possible, preferably
- in the head of the document. See the Sample HTML for more information -->
-<script src="https://tags.tiqcdn.com/utag/cognizant-sandbox/2378260-atest/dev/utag.sync.js"></script>
+    <!-- The utag.sync.js script should run as early as possible -->
+    <script src="https://tags.tiqcdn.com/utag/cognizant-sandbox/2378260-atest/dev/utag.sync.js"></script>
 
-<script type="text/javascript">
-var utag_data = {
-  page_name: document.title, // Capture the current page title
-  GA_tracking_Id: "", // GA4 Tracking ID
-  GA_page_name: document.title, // GA4 Page Name
-  ga4_event_name: "page_view", // GA4 Event Name (default to page view)
-  measurement_id_ga: "", // GA4 Measurement ID
-  page_location: window.location.href, // Capture the full page URL
-  page_path: window.location.pathname, // Capture the page path
-  page_referrer: document.referrer, // Capture the referrer URL
-  page_domain: window.location.hostname, // Capture the domain name
-  tealium_event: "page_view" // Tealium event to trigger GA4 page view
-};
-</script>
-
-<!-- Loading Tealium script asynchronously -->
-<script type="text/javascript">
-(function(a,b,c,d){
-  a='https://tags.tiqcdn.com/utag/cognizant-sandbox/2378260-atest/dev/utag.js';
-  b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
-  a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-})();
-</script>
+    <!-- Loading Tealium script asynchronously -->
+    <script type="text/javascript">
+    (function(a,b,c,d){
+      a='https://tags.tiqcdn.com/utag/cognizant-sandbox/2378260-atest/dev/utag.js';
+      b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
 
 
     
