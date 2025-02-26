@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    window.utag_data = {
+  page_name: document.title,
+  GA_tracking_Id: "G-N17VMNCLW0", // Replace with your GA4 Tracking ID
+  GA_page_name: document.title,
+  ga4_event_name: "page_view",
+  measurement_id_ga: "G-N17VMNCLW0", // Replace with your GA4 Measurement ID
+  page_location: window.location.href,
+  page_path: window.location.pathname,
+  page_referrer: document.referrer,
+  page_domain: window.location.hostname,
+  tealium_event: "page_view"
+};
+
     <!-- The utag.sync.js script should run as early as possible, preferably
  in the head of the document. See the Sample HTML for more information -->
 <script src="https://tags.tiqcdn.com/utag/cognizant-sandbox/2378260-atest/dev/utag.sync.js"></script>
