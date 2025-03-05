@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-<!-- The utag.sync.js script should run as early as possible, preferably
- in the head of the document. See the Sample HTML for more information -->
 <script type="text/javascript">
 var utag_data = {
-  page_title : "" // 
+  page_title : "", // 
+  page_url : "", // 
+  iq_event_id : "", // A system variable that contains the ID of an iQ event and used to fire a tag when an event happens.
+  tealium_event : "" // Contains the Tealium event.
 }
 </script>
 
 <!-- Loading script asynchronously -->
 <script type="text/javascript">
     (function(a,b,c,d){
-    a='https://tags.tiqcdn.com/utag/cognizant-sandbox/2378260-mdtest/prod/utag.js';
+    a='https://tags.tiqcdn.com/utag/cognizant-sandbox/2378260-mdtest/dev/utag.js';
     b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
     a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
     })();
 </script>
+
+    
 
     
     
