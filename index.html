@@ -142,7 +142,20 @@ var utag_data = {
           </li>
 
           <li>
-            <button id="contactdownload" class="navbar-link hover-1" data-nav-toggler onclick="window.location.href='file.txt'; alert('File is being downloaded!')">Contact</button>
+           <button id="contactdownload" class="navbar-link hover-1" data-nav-toggler onclick="downloadFile('file.txt')">Contact</button>
+
+<script>
+function downloadFile(url) {
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'file.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    alert('File is being downloaded!');
+}
+</script>
+
           </li>
 
         </ul>
